@@ -1,0 +1,57 @@
+
+/**
+ * Top-menu
+ */
+
+@include breakpoint(medium only)
+{
+  h1{
+    font-size: 1.8rem;
+  }
+
+  h3i{
+    font-size: 1.3rem;
+  }
+
+  #top-menu .fa{
+    font-size: 2rem;
+  }
+
+  .fixed-header{
+    h1{
+      font-size: 2.2rem;
+      margin-left: 0px;
+    }
+  }
+
+  .title-bar-left{
+   #logo{
+    max-height: 7rem;
+   } 
+  }
+
+  .title-bar-right{
+    max-width: 1.8rem;
+    margin-right: 0.8rem;
+    .fa-bars{
+      font-size: 3rem;
+    }
+  }
+
+}
+
+//h1{
+//  font-size: 2rem;
+//}
+//#top-menu{
+//  background-color: $top-menu-bckd-color;
+//  height: 3rem;
+//
+//  .fa{
+//    font-size: 1.8rem;
+//  }
+//}
+//
+//.title-bar-right .fa{
+//  font-size: 3rem;
+//}

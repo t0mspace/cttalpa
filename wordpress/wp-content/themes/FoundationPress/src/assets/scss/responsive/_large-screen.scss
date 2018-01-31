@@ -1,0 +1,44 @@
+
+/**
+ * Top-menu
+ */
+@include breakpoint(large)
+{
+  // h1{
+  //   //font-size: 4rem;
+  // }
+  // //h2{
+  // //  margin-left: 1rem;
+  // //}
+
+  h1{
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  #top-menu{
+    // background-color: $top-menu-bckd-color;
+    height: 3rem;
+  
+    .fa{
+      font-size: 1.8rem;
+    }
+  }
+  #logo{
+    width:7rem;
+    margin-right: 2rem;
+  }
+  
+  .title-bar-right .fa{
+    font-size: 3rem;
+  }
+}
+
+
+
+
+
+//.page-content{
+//  padding-right: 18rem;
+//}
+

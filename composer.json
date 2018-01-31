@@ -1,0 +1,9 @@
+{
+    "name": "tom/cttalpa",
+    "description": "website alpa",
+    "type": "project",
+    "require": {
+        "johnpbloch/wordpress": "^4.8",
+        "wp-coding-standards/wpcs": "^0.14.0"
+    }
+}

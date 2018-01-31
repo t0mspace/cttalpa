@@ -1,0 +1,533 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700,800|Roboto:300');
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+@import 'util/mixins';
+@import 'responsive/small-screen';
+@import 'responsive/medium-screen';
+@import 'responsive/large-screen';
+
+@include foundation-global-styles;
+//@include foundation-grid;
+@include foundation-flex-grid;
+//@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+// @include foundation-float-classes;
+@include foundation-flex-classes;
+
+// @include foundation-prototype-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+/*
+  My custom styles:
+  Add your scss files below to structure your project styles
+*/
+
+
+/*
+  My custom styles:
+  Add your scss files below to structure your project styles
+*/
+
+
+/**
+Set variables
+ */
+/**
+ALPA colors
+ */
+
+$orange:                  #ff6600;
+$orange-light:            #f16d15;
+//$blue:                    #263d9d;
+$blue:                    #203c88;
+$alpa-gray-light:         #e2e2e2;
+$alpa-gray-medium:        #d3d3d3;
+$alpa-gray-dark:          #333333;
+$alpa-gray-lighter:       #f2f2f2;
+$alpa-gray-test:          #626262;
+$alpa-gray-bgd-h2:        #f8f8f8;
+
+
+//section#tweets{
+//  background-color: lightgreen;
+//  border: 2px solid black;
+//
+//
+//}
+
+
+/**
+apply colors to elements
+ */
+$top-menu-bckd-color: $alpa-gray-dark;
+$banner-bckd-color: $blue;
+$body-bckgd-color: #f0f0f0;
+$content-bckgd-color: $alpa-gray-bgd-h2;
+$section-bckgd-color: white;
+$become-member-bckgd-color: $alpa-gray-lighter;
+$footer-bckgd-color: $alpa-gray-dark;
+
+
+
+//typography
+h1{
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  //@include breakpoint(medium) {
+  //  margin-right: 12rem;
+  //
+  //}
+
+}
+
+h2{
+
+  font-family: 'Open Sans';
+  font-weight: bolder;
+  color: $orange;
+  //font-size: header-size(medium, h2);
+  display: inline-block;
+  // margin-left: 1rem;
+  margin: 2rem 0rem 2rem 1rem;
+  background-color: $alpa-gray-bgd-h2;
+
+
+}
+
+h3{
+  font-family: 'Open Sans';
+
+  & a{
+    color: $alpa-gray-test;
+    text-decoration: none;
+  }
+
+  //margin-bottom: 2rem!important
+
+  //padding-left: 1rem;
+}
+
+article h3{
+  margin-top: 0rem;
+  padding-top: 2rem;
+}
+
+// h3i{
+//   font-size: 1.5rem;
+// }
+
+h4{
+  font-family: 'Open Sans';
+  font-weight: bold;
+  margin: 2rem 0 2rem 0rem;
+}
+
+
+p, ul,ol{
+  font-family: 'Roboto';
+  font-weight: 300;
+  color: $alpa-gray-dark;
+}
+
+
+
+
+
+/**
+Common rules
+ */
+body {
+  background-color: $body-bckgd-color;
+}
+.thumbnail{
+  border: none;
+  box-shadow:none;
+
+}
+.fa{
+  color: white;
+}
+
+.title-bar-left {
+  max-height: 5rem;
+}
+
+.content{
+  background-color: $content-bckgd-color;
+}
+
+.callout{
+  border: none;
+
+}
+
+.page-content, section:not(#become-member):not(.content):not(.comite):not(#tweets){
+  padding:1rem;
+  background-color: $section-bckgd-color;
+}
+//section:not(#become-member):not(.content):not(.comite){
+//  padding:1rem;
+//  background-color: $section-bckgd-color;
+//}
+
+.main-content{
+  max-width: 70%;
+  padding-left: 1rem;
+  .fa{
+    color: $alpa-gray-dark;
+    padding-right: 0.8rem;
+  }
+}
+
+//button
+[type="submit"]
+{
+
+  @include button(false, $orange, $orange, white, 'solid');
+}
+
+.read-more{
+
+  @include button(false, $blue,'', white, 'solid');
+  padding: 0.4rem;
+  margin: 0 0 0 0.5rem;
+  vertical-align: middle;
+
+}
+
+#offCanvas .button{
+  background: none;
+  transition: none;
+  text-align: left;
+}
+
+#offCanvas .button:hover{
+  background: none;
+}
+
+//pagination
+
+.pagination{
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+/**
+ * Header*/
+
+/**
+ * Top-menu
+ */
+
+#top-menu{
+  background-color: $top-menu-bckd-color;
+}
+
+/**
+ * Banner
+ */
+
+
+#header{
+  background-color: $banner-bckd-color;
+  width: 100%;
+}
+#logo{
+  margin: 0rem 1.3rem 0rem 0rem;
+  max-width: 100%;
+  height: auto;
+
+
+}
+
+.fixed-header {
+  position: fixed;
+  top:0; left:0;
+  width: 100%;
+  height: 5rem;
+
+  #logo{
+    width: 4rem;
+  }
+
+
+  h3i{
+    display: none;
+  }
+  z-index: 990;
+}
+.title-bar-left{
+  display: flex;
+}
+
+.title-bar-right{
+
+  .fa-bars{
+    font-size: 3rem;
+  }
+}
+
+.title-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+/**
+ * main-menu
+ */
+
+#menu-main-menu{
+  padding-top: 3rem;
+}
+
+.close-button{
+  z-index: 999;
+}
+
+/**
+ * Footer
+ */
+
+#footer{
+  background-color: $footer-bckgd-color;
+  height: 10rem;
+}
+
+
+/**
+Styles by page
+ */
+
+//home
+#become-member{
+  padding: 3rem 0rem 3rem 0rem;
+  background-color: $become-member-bckgd-color;
+  //h3{
+  //  padding-bottom: 2rem;
+  //}
+  a{
+    @include button-style($orange, $orange-light, white);
+  }
+}
+
+.homepage h2{
+  margin: 2rem 0rem 1rem 0rem;
+  padding-left: 1rem;
+
+}
+
+//.post{
+//  margin: 0rem 0rem 2rem 0rem;
+//
+//}
+
+//other then home
+
+.main-content {
+
+
+  //h2 {
+  //  padding-left: 0px;
+  //  padding-top: 2rem;
+  //  padding-bottom: 2rem;
+  //}
+
+
+}
+
+#posts{
+  img{
+    padding-bottom: 1rem;
+  }
+}
+
+#tweets{
+  a{
+    text-decoration: none;
+  }
+}
+
+
+//Espace media et contact
+
+.wpcf7{
+  max-width: 25rem;
+}
+
+
+.wpcf7-form .wpcf7-response-output.wpcf7-validation-errors {
+  @include callout-style($input-error-color);
+}
+
+.wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+  @include callout-style($input-success-color);
+}
+div.wpcf7-validation-errors{
+  border: none;
+}
+div.wpcf7-validation-errors:before {
+  content: "\f071";
+  font-family: "FontAwesome";
+}
+
+div.wpcf7-mail-sent-ok:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+}
+
+
+//contact
+
+.page-contact{
+
+  margin-left: 1rem;
+}
+
+.comite, .page-contact, .page-content{
+  .fa{
+    color: $alpa-gray-dark;
+    padding-right: 0.8rem;
+  }
+}
+.comite{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.card{
+  background-color: #f2f2f2;
+  max-width: 20rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  width: 17rem;
+  margin-bottom: 1rem;
+}
+
+.contact{
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+
+//page inscription
+
+#wpcf7-f106-o1{
+  margin-top: 3rem;
+}
+
+
+//articles
+
+.entry-content{
+  padding-bottom: 2rem;
+
+  img{
+    padding: 1rem 0rem 1rem 0rem;
+  }
+}
+
+/**
+tools
+ */
+
+.remove-link-style{
+  text-decoration: none;
+}
+
+
+/**
+components
+ */
+.posts-in-this-cat{
+  flex-direction: row;
+}
+
+.articles-same-cat li{
+  list-style-type: square;
+  li::before {
+    content: "• ";
+    color: $alpa-gray-dark;
+  }
+  a{
+    text-decoration: dashed;
+  }
+}
+
+
+
+
+
+// Global
+@import "global/_accessibility";
+@import "global/colors";
+@import "global/wp-admin";
+@import "global/wp-overrides";
+
+// Modules
+@import "modules/navigation";
+@import "modules/content";
+@import "modules/footer";
+@import "modules/editor-style";
+
+// Components
+@import "components/buttons";
+@import "components/cards";
+@import "components/featured-image";
+@import "components/dividers";
+@import "components/links";
+
+// Templates
+@import "templates/front";
+@import "templates/kitchen-sink";
